@@ -1,0 +1,13 @@
+Write a program to the numbers between 1 and 1000 which are not prime numbers as well as not part of first 17 numbers in fibonacci series. This problem should be solved by considering 
+the 3 processes(p0 to p3) and two buffers with size 1 as follows:
+
+a: P0 has to generate the numbers  from 1 to 1000, and put them in buffer B0 one at a time.
+   After placing 1000 in the buffer, p0 places the lookout 0 in the buffer, and terminates.
+
+b: P1 has to read successive number from B0. If a number is not prime, the number is placed 
+   in buffer B1. If the number is prime, it is ignored. If the value is 0 , 0 is placed in
+   B1 , and P1 terminates.
+
+c: P2 has to read successive number from B1. If a number is not a part of first 17 numbers
+   in fibonacci series, it is printed. If the number is a part of first 17 numbers in 
+   fibonacci series, it is ignored. If the values is 0 , p2 terminates. 
