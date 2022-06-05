@@ -1,0 +1,5 @@
+Write a program to create two stacks of size 21. Create two threads running parallelly where
+one thread will compute the average of the elements in first stack and the other will compute
+median value of the elements in another stack. There will be one main thread which will wait
+for the two parallel threads to complete their task and it will compute the differences of 
+the two previously obtained output and print the final output.
